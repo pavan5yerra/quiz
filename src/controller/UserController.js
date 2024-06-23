@@ -9,7 +9,7 @@ async function handleGetAllUsers (req, res,server) {
     }
   `;
     const data = await server.executeOperation({query : GET_USERS});
-    return  res.json(data);
+    return  res.json(data.data.users);
 }
 
 

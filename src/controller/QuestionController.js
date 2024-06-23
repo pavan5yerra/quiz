@@ -1,6 +1,5 @@
 const { gql } = require('apollo-server-express');
 async function handleGetAllQuestions (req, res,server) {
-
     const GET_QUESTIONS = gql`
         query {
             questions {
